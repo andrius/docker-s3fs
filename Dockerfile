@@ -15,9 +15,7 @@ RUN apt-get -qq install \
 	libtool
 
 # Check out S3FS
-RUN git clone https://github.com/s3fs-fuse/s3fs-fuse.git \
-	&& cd s3fs-fuse \
-	&& git checkout tags/v1.78
+RUN git clone https://github.com/s3fs-fuse/s3fs-fuse.git
 
 # Build and install S3FS
 RUN cd s3fs-fuse \
